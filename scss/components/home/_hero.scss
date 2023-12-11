@@ -1,0 +1,246 @@
+.hero{
+	width: 100%;
+    overflow: hidden;
+	position: relative;
+	height: 500px;
+
+    @media(min-width:1199px){
+        height: 800px;
+    }
+
+    &--prev{
+		position: absolute;
+        left: 15px;
+		top: 50%;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		z-index: 2;
+
+
+		svg{
+			width: 40px;
+			fill: white;
+            opacity: 0.5;
+		}
+
+	}
+
+	&--next{
+		position: absolute;
+        right: 15px;
+		top: 50%;
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		z-index: 2;
+
+
+		svg{
+			width: 40px;
+			fill: white;
+            opacity: 0.5;
+		}
+
+	}
+
+    &__form{
+
+     
+        &--one{
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../img/home/Banner.webp');
+            background-position:center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            @include flex-center-center ; 
+            flex-direction: column;
+
+            .container-sm{
+                @include flex-center-center ;
+                flex-direction: column;
+                @media(min-width: 1199px){
+                    @include flex-end-start ; 
+                }
+            }
+
+            &__text{   
+                @include flex-center-center; 
+                flex-direction: column;
+
+                @media(min-width: 1199px){
+                    @include flex-end-start ; 
+                }
+
+                h1{
+                    width: 100%;
+                    font-size: 25px;
+                    color: $mikado_yellow;
+                    text-shadow: 2px 2px 5px black;
+                    text-transform: uppercase;
+                    text-align: center;
+    
+                    @media(min-width: 992px){
+                        text-align: start;
+                        font-size: 50px;
+                        line-height: 56px;
+                    }
+    
+                    @media(min-width: 1199px){
+                        font-size: 70px;
+                    }
+                }
+    
+                p{
+                    font-size: 20px;
+                    color: $white;
+                    padding-bottom: 60px;
+                    padding-top: 10px;
+
+                    @media(min-width: 992px){
+                        font-size: 40px;
+                        line-height: 56px;
+                    }
+                }
+
+                &__button{
+                    @include flex-center-center;
+                    background-color: $la_salle_green;
+            
+                    /*text*/
+                    font-size: 14px;
+                    font-weight: 800;
+                    margin-top: 17px;
+                    letter-spacing: 0.5px;
+                    padding: 12px 23px;
+                    color: $white;
+            
+                    @media(min-width:768px){
+                        font-size: 20px;
+                    }
+            
+                    &:hover{
+                        color: $white;
+                        background-color:$black ;
+                        border: 1px solid $mikado_yellow;
+                    }
+                }
+            }
+
+
+        }
+
+        &--two{
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('../img/home/Hotel.webp');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            @include flex-center-center ; 
+            flex-direction: column;
+
+
+            .container-sm{
+                @include flex-center-center ; 
+                flex-direction: column;
+
+                @media(min-width: 1199px){
+                    @include flex-start-start ;
+                }
+            }
+
+            &__text{   
+                @include flex-center-center ; 
+                flex-direction: column;
+
+                @media(min-width: 1199px){
+                    @include flex-start-start ; 
+                }
+
+                h1{
+                    width: 100%;
+                    font-size: 25px;
+                    color: $mikado_yellow;
+                    text-align: center;
+                    text-transform: uppercase;
+                    text-shadow: 2px 2px 5px black;
+
+                    @media(min-width: 992px){
+                        text-align: start;
+                        font-size: 50px;
+                        line-height: 56px;
+                    }
+    
+                    @media(min-width: 1199px){
+                        font-size: 70px;
+                    }
+                }
+    
+                p{
+                    font-size: 20px;
+                    color: $white;
+                    padding-bottom: 60px;
+                    padding-top: 10px;
+                    text-align: center;
+
+                    @media(min-width: 992px){
+                        text-align: start;
+                        font-size: 40px;
+                        line-height: 56px;
+                    }
+                }
+
+                &__button{
+                    @include flex-center-center;
+                    background-color: $la_salle_green;
+            
+                    /*text*/
+                    font-size: 14px;
+                    font-weight: 800;
+                    margin-top: 17px;
+                    letter-spacing: 0.5px;
+                    padding: 12px 23px;
+                    color: $white;
+            
+                    @media(min-width:768px){
+                        font-size: 20px;
+                    }
+            
+                    &:hover{
+                        color: $white;
+                        background-color:$black ;
+                        border: 1px solid $mikado_yellow;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+
+		.swiper-slide{
+			width: 100% !important;
+			height: 100%;
+
+		}
+
+        .swiper-pagination-bullet{
+            background-color: $white;
+            opacity: 0.6;
+            
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: transparent;
+            border: 1px solid white;
+            
+        }
+
+}

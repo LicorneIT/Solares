@@ -1,0 +1,125 @@
+.win_win{
+    width: 100%;
+    position: relative;
+
+    .container-sm{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+
+        @media(min-width: 1199px){
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+    }
+
+    &__text{
+        @include flex-center-center;
+        flex-direction: column;
+        padding: 30px 0 0 0;
+
+        @media(min-width: 1199px){
+            padding: 50px 0;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        h1{
+            color: #1b8233;
+            text-align: center;
+            font-weight: 900;
+            font-size: 20px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+
+            @media(min-width:1400px){
+                font-size: 30px;
+            }
+
+
+
+        }
+
+        h2{
+            text-align: center;
+            font-weight: 800;
+            font-size: 17px;    
+            color: #272727;
+            margin-bottom: 15px;
+
+            @media(min-width:768px){
+                font-size: 20px;  
+            }
+        }
+
+        p{
+            color: #000000;
+            line-height: 26px;
+            letter-spacing: 0.3px;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 10px;
+
+            @media(min-width:768px){
+                font-size: 17px;
+            }
+        }
+
+        h4{
+            color: #1b8233;
+            font-size: 17px;
+            font-weight: 700;
+            text-align: center;
+
+            @media(min-width:768px){
+                font-size: 20px;
+            }
+        }
+
+        &__button{
+            @include flex-center-center;
+            background-color:$mikado_yellow ;
+
+            /*Text*/
+            font-size: 14px;
+            font-weight: 800;
+            margin-top: 17px;
+            letter-spacing: 0.5px;
+            padding: 12px 23px;
+            color: $black;
+
+            @media(min-width:768px){
+                font-size: 20px;
+            }
+
+            &:hover{
+                color: $white;
+                background-color:$black ;
+                border: 1px solid $mikado_yellow;
+            }
+        }
+    }
+
+    &__imagen{
+        width: 100%;
+        position: static;
+        margin: auto;
+
+        @media(min-width: 1199px){
+            position: relative;
+            bottom: 120px;
+        }
+
+        @media(min-width: 1399px){
+            bottom: 70px;
+        }
+
+        @media(min-width: 1677px){
+            bottom: 39px;
+        }
+
+    }
+}

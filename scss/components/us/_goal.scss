@@ -1,0 +1,82 @@
+.goal{
+    width: 100%;
+    width: 100%;
+	overflow: hidden;
+	position: relative;
+
+    .container-sm{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+          @media(min-width: 1199px){
+            padding: 50px 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+        }
+    }
+
+    &__imagen{
+        width: 75%;
+        margin: auto;
+
+    }
+
+    &__text{
+        @include flex-center-center;
+        flex-direction: column;
+        gap: 30px;
+
+
+        &__one{
+            h1{
+                color: #1b8233;
+                text-align: center;
+                font-weight: 900;
+                font-size: 25px;
+                margin-bottom: 15px;
+                text-transform: uppercase;
+    
+                @media(min-width:768px){
+                    font-size: 30px;
+                }
+            }
+    
+            p{
+                color: #000000;
+                line-height: 26px;
+                letter-spacing: 0.3px;
+                text-align: center;
+                font-size: 15px;
+    
+                @media(min-width:768px){
+                    font-size: 17px;
+                }
+            }
+        }
+
+        &__button{
+            @include flex-center-center;
+            background-color: $mikado_yellow;
+    
+            /*text*/
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            padding: 12px 23px;
+            color: $black;
+    
+            @media(min-width:768px){
+                font-size: 20px;
+            }
+    
+            &:hover{
+                color: $white;
+                background-color:$black ;
+                border: 1px solid $mikado_yellow;
+            }
+        }
+    }
+}

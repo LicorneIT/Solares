@@ -1,0 +1,89 @@
+//* Globals
+@import 'globals/colors';
+@import 'globals/containers';
+
+
+//* Mixins
+@import 'mixins/flex';
+
+//* Layouts
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/footer';
+@import 'layout/media';
+@import 'layout/submenu';
+
+//*Home
+@import 'components/home/hero';
+@import 'components/home/reduces_costs';
+@import 'components/home/promotion';
+@import 'components/home/win_win';
+@import 'components/home/idea';
+@import 'components/home/our_products';
+@import 'components/home/sales';
+@import 'components/home/thanks';
+
+//*nosotros
+@import 'components/us/hero';
+@import 'components/us/us';
+@import 'components/us/certifcation';
+@import 'components/us/goal';
+@import 'components/us/situation';
+
+//*galeria
+@import 'components/gallery/hero';
+@import 'components/gallery/products';
+@import 'components/gallery/catalog';
+
+//*Services
+@import 'components/services/hero';
+@import 'components/services/offer';
+@import 'components/services/renewable';
+@import 'components/services/our_services';
+@import 'components/services/benefit';
+
+//*products
+@import 'components/products/hero';
+@import 'components/products/title';
+@import 'components/products/instalation';
+@import 'components/products/panels';
+
+//*distibuitor
+@import 'components/distibutor/hero';
+@import 'components/distibutor/distributor';
+@import 'components/distibutor/rason';
+@import 'components/distibutor/start_win';
+
+//*contact
+@import 'components/contact/hero';
+@import 'components/contact/grid';
+@import 'components/contact/location';
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial,Helvetica,sans-serif;
+	box-sizing: border-box;
+	
+
+}
+
+button{
+	border: 0;
+	outline: none;
+	background-color: transparent;
+	transition: 0.3s;
+}
+
+a{
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+svg{
+	width: 100%;
+	height: 100%;
+}
+

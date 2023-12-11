@@ -1,0 +1,395 @@
+.contact{
+    width: 100%;
+    width: 100%;
+	overflow: hidden;
+	position: relative;
+    padding: 30px 0;
+    background-image: url('../img/contact/ban-contactanos.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media(min-width: 1199px){
+       padding: 60px 0;
+    }
+
+    .container-sm{
+        @include flex-j-center;
+        flex-direction: column;
+    }
+
+
+    &__location{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        @media(min-width: 1199px){
+            grid-template-columns: repeat(2, 1fr);
+         }
+
+
+         &__map{
+            width: 80%;
+            margin: auto;
+
+            @media(min-width: 1199px){
+                width: 100%;
+             }
+         }
+
+         &__text{
+            width: 80%;
+            margin: auto;
+            padding-top: 30px;
+
+            @media(min-width: 1199px){
+                width: 70%;
+                padding-top: 0;
+            }
+
+
+            h1{
+                width: 100%;
+                font-weight: 600;
+                font-size: 25px;
+                color: $mikado_yellow;
+                text-align: center;
+                margin: 0;
+        
+                @media(min-width:768px){
+                    font-size: 30px;
+                    padding-bottom: 20px;
+                    text-align: start;
+                }
+            }
+
+            &__information{
+                @include flex-a-center;
+                gap: 15px;
+                padding-top: 20px;
+
+                &__icon{
+                    width: 30px;
+                }
+
+                p{
+                    color: $white;
+                    line-height: 26px;
+                    letter-spacing: 0.3px;
+                    text-align: start;
+                    font-size: 15px;
+        
+                    @media(min-width:768px){
+                        font-size: 17px;
+                    }
+                }
+            }
+
+         }
+    }
+
+    h1.title{
+        font-weight: 600;
+        font-size: 25px;
+        color: $mikado_yellow;
+        text-shadow: 2px 2px 5px black;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 30px 0;
+
+        @media(min-width:768px){
+            font-size: 30px;
+            padding: 60px 0;
+        }
+    } 
+
+    &__contact{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+        @media(min-width: 1199px){
+            grid-template-columns: repeat(2, 1fr);
+         }
+
+         &__form{
+            width: 100%;
+
+            h1{
+                font-weight: 600;
+                font-size: 20px;
+                color: $mikado_yellow;
+                text-align: center;
+        
+                @media(min-width:768px){
+                    font-size: 25px;
+                    text-align: start;
+                }
+            }
+
+            p.subtitle{
+                color: $white;
+                letter-spacing: 0.3px;
+                text-align: center;
+                font-size: 12px;
+                padding-bottom: 30px;
+    
+                @media(min-width:768px){
+                    font-size: 17px;
+                    text-align: start;
+                }
+            }
+
+            input, textarea{
+                width: 100%;
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid $la_salle_green;
+                margin-bottom: 15px;
+            }
+
+            textarea{
+                height: 200px;
+            }
+
+            input[type=checkbox] {
+                width: auto;
+                margin-bottom: 0;
+                border: 1px solid $mikado_yellow;
+            }
+
+            &__input_name{
+                
+                &--active{
+                    input{
+                        border: 1px solid red;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &__error{
+                    width: 100%;
+                    max-width: 471px;
+                    display: none;
+                    justify-content: flex-start;
+                    padding: 5px 0;
+                    text-align: start;
+                    font-size: 12px;                      
+                    color: red;
+            
+                    &--active{
+                        display: flex;
+                        
+                    }
+                }
+            }
+
+            &__input_email{
+                
+                &--active{
+                    input{
+                        border: 1px solid red;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &__error{
+                    width: 100%;
+                    max-width: 471px;
+                    display: none;
+                    justify-content: flex-start;
+                    padding: 5px 0;
+                    text-align: start;
+                    font-size: 12px;                      
+                    color: red;
+            
+                    &--active{
+                        display: flex;
+                        
+                    }
+                }
+            }
+
+            &__input_phone{
+                
+                &--active{
+                    input{
+                        border: 1px solid red;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &__error{
+                    width: 100%;
+                    max-width: 471px;
+                    display: none;
+                    justify-content: flex-start;
+                    padding: 5px 0;
+                    text-align: start;
+                    font-size: 12px;                      
+                    color: red;
+            
+                    &--active{
+                        display: flex;
+                        
+                    }
+                }
+            }
+
+            &__input_direction{
+                
+                &--active{
+                    input{
+                        border: 1px solid red;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &__error{
+                    width: 100%;
+                    max-width: 471px;
+                    display: none;
+                    justify-content: flex-start;
+                    padding: 5px 0;
+                    text-align: start;
+                    font-size: 12px;                      
+                    color: red;
+            
+                    &--active{
+                        display: flex;
+                        
+                    }
+                }
+            }
+
+            &__input_nombre_cfe{
+                
+                &--active{
+                    input{
+                        border: 1px solid red;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &__error{
+                    width: 100%;
+                    max-width: 471px;
+                    display: none;
+                    justify-content: flex-start;
+                    padding: 5px 0;
+                    text-align: start;
+                    font-size: 12px;                      
+                    color: red;
+            
+                    &--active{
+                        display: flex;
+                        
+                    }
+                }
+            }
+
+            &__input_number_cfe{
+                
+                &--active{
+                    input{
+                        border: 1px solid red;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &__error{
+                    width: 100%;
+                    max-width: 471px;
+                    display: none;
+                    justify-content: flex-start;
+                    padding: 5px 0;
+                    text-align: start;
+                    font-size: 12px;                      
+                    color: red;
+            
+                    &--active{
+                        display: flex;
+                        
+                    }
+                }
+            }
+
+            &__textarea{
+                
+                &--active{
+                    textarea{
+                        border: 1px solid red;
+                        margin-bottom: 0;
+                    }
+                    
+                }
+
+                &__error{
+                    width: 100%;
+                    max-width: 471px;
+                    display: none;
+                    justify-content: flex-start;
+                    padding: 5px 0;
+                    text-align: start;
+                    font-size: 12px;                      
+                    color: red;
+            
+                    &--active{
+                        display: flex;
+                        
+                    }
+                }
+            }
+
+            &__button{
+                @include flex-center-center;
+                background-color: $mikado_yellow;
+                /*text*/
+                font-size: 14px;
+                font-weight: 800;
+                margin-top: 17px;
+                letter-spacing: 0.5px;
+                padding: 12px 23px;
+                color: $black;
+                margin: auto;
+
+                @media(min-width:768px){
+                    font-size: 20px;
+                    margin: 0;
+                }
+        
+                &:hover{
+                    color: $white;
+                    background-color:$black ;
+                    border: 1px solid $mikado_yellow;
+                }
+            }
+
+            &__checkbox{
+                @include flex-a-center;
+                gap: 10px;
+                padding-bottom: 10px;
+                font-size: 17px;
+            }
+
+         }
+
+         &__imagen{
+            width: 80%;
+            margin: auto;
+            padding-top: 30px;
+
+            @media(min-width: 1199px){
+                width: 503px;
+                padding: 0;
+            }
+
+         }
+
+    }
+}
